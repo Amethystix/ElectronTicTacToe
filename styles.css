@@ -1,0 +1,21 @@
+.hidden{
+	display: none;
+}
+body{
+	background-color: #AADDAA;
+}
+#startDiv{
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	background-color: #107755;
+	padding: 30px;
+	color: white;
+	font: arial, sans-serif;
+	font-size: 25px;
+}
+#toptext{
+	text-align: center;
+	margin: auto;
+	padding: 25px;
+}

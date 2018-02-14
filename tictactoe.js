@@ -1,3 +1,4 @@
+var ipc = require('electron').ipcRenderer;
 var board = [];
 var bSize = 0;
 
@@ -37,11 +38,15 @@ function play(){
 }
 //Reads the user's chosen board size and hides the initial div
 function start(){
-	bSize = document.querySelector("#inputText").value;
+	document.querySelector(".playBtn").addEventListener('click', function(evt){
+		evt.preventDefault();
+		bSize = document.querySelector("#inputText").value;
+		document.querySelector('#startDiv').classList.add("hidden");
+	});
 }
 //First function called to start the game
 function main(){
 	start();
 }
 
-document.eventListener("DOMContentLoaded", main);
+//document.addEventListener('DOMContentLoaded', main);

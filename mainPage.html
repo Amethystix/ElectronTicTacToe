@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		
+		<link rel = "stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
-		<h1 id="toptext">Tic Tac Toe</h1>
+		<h1 id="toptext">Tic Tac Toe!</h1>
 		<div id= "startDiv">
 			<form method="POST" action="">
 			<label for="inputText">Board size: </label>
-			<select name="inputText">
+			<select name="inputText" id="inputText">
 				<option value="9">3x3</option>
 				<option value="16">4x4</option>
 				<option value="25">5x5</option>
 			</select>
+			<input class="playBtn" type="submit" value="Play">  
 			</form>
 
 		</div>
+		<script src="tictactoe.js"></script>
 	</body>
 </html>
