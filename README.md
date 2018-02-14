@@ -12,4 +12,4 @@ I aim to create a desktop application of Tic Tac Toe, and later implement online
 
 ## Current progress
 
-February 14th was the day this project began, and the day I wrote this README, so progress is only at its infant stages.
+February 14th was the day this project began, and the day I wrote this README, so progress is only at its infant stages.  I've only just begun to piece together the functions and files that I'll need.
