@@ -2,13 +2,12 @@ const {app, BrowserWindow} = require('electron');
 const path = require('path');
 const url = require('url');
 var ipc = require('electron').ipcMain;
-const tictac = require('./tictactoe.js');
 
 let win;
 
 function createWindow(){
 	//Create browser window
-	win = new BrowserWindow({width: 800, height: 600});
+	win = new BrowserWindow({width: 800, height: 800});
 
 	win.loadURL(url.format({
 		pathname: path.join(__dirname, 'mainPage.html'),
@@ -17,7 +16,6 @@ function createWindow(){
 	}));
 
 	win.webContents.on('did-finish-load', ()=> {
-		win.webContents.executeJavaScriptCode(tictac.main());
 	});
 
 

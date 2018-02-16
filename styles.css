@@ -19,3 +19,29 @@ body{
 	margin: auto;
 	padding: 25px;
 }
+#board-holder{
+	margin: auto;
+	text-align: center;
+}
+#board{
+	text-align: center;
+	background-color: black;
+	margin: auto;
+	display: block;
+	padding: 5px;
+	display: inline-block;
+}
+.space{
+	height:100px;
+	width:100px;
+	background-color: #107755;
+	padding: 5px;
+	font-size: 40px;
+	display: inline-block;
+}
+.spacer{
+	background-color: black;
+	width:5px;
+	height: 100px;
+	display: inline-block;
+}
